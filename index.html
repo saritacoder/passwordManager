@@ -1,4 +1,4 @@
-
+<!-- 
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,4 +33,50 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
   <script src="index.js"></script>
 </body>
-</html> 
+</html>  -->
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body style="margin: 0">
+  <form onsubmit="handleFormSubmit(event)">
+    <label for="email">Title</label>
+    <input type="email" name="email" id="email" />
+    <label for="password">Password</label>
+    <input type="number" name="password" id="password" />
+    <button type="submit">Add</button>
+  </form>
+
+  <h2>All Passwords</h2>
+  <ul id="password-list"></ul>
+
+  <div>
+    <h1>Password Keeper</h1>
+    <p id="totalpassword">Total Password: 0</p>
+
+    <label for="search">Search</label>
+    <input type="text" id="search" name="search" oninput="handleSearch(event)">
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
